@@ -1,0 +1,22 @@
+Task description:
+
+A) Fine-tune the model Llama-3.2-1B-bnb-4bit on the PersianQA dataset (a subset of the PQuAD dataset is provided). Use the evaluation metrics F1-Score and Exact Match (EM) to report the results.
+To reduce training resource consumption, you may use techniques such as LoRA or QLoRA. However, you are not allowed to use Zero-Shot or Few-Shot methods.
+
+B) Select another model, such as paraphrase-multilingual-MiniLM-L12-v2, fine-tune it on the project dataset, and then implement a RAG (Retrieval-Augmented Generation) pipeline for answering questions and retrieving information.
+In the process, apply chunking to the attached PDF file — both word-based and sentence-based implementations.
+For the retrieval model, use TF-IDF or BM25.
+Finally, compute and compare the evaluation metrics F1-Score and Exact Match (EM). Also analyze results in terms of Precision, Recall, and Hit@k.
+
+C) Calculate the semantic similarity between the model’s answer and the ground truth answer using the metrics Cosine Similarity and MRR.
+
+D) Choose another model, such as distiluse-base-multilingual-cased-v2, fine-tune it on the project dataset, and evaluate its performance in the retrieval pipeline.
+Then compute semantic similarity using Cosine Similarity and MRR.
+
+E) Select multiple other models (e.g., multilingual-e5-base or any other suitable ones), fine-tune them on the project dataset, and evaluate retrieval performance.
+Implement various pre-processing techniques to improve embedding space quality.
+To enhance retrieval speed and efficiency, you may use vector databases such as FAISS, Chroma, LanceDB, or other suitable ones.
+Finally, analyze results based on Cosine Similarity, MRR, Precision, Recall, and Hit@k, and present a comprehensive evaluation.
+
+F) For the best QA model, design a user interface that allows users to input a question and see the model-generated answer.
+You may use tools such as Gradio, Streamlit, FastAPI, or other appropriate frameworks.
